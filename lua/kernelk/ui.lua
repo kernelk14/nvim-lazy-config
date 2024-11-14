@@ -13,5 +13,10 @@ vim.opt.expandtab = true
 vim.opt.cursorline = true
 
 -- Here we set up my colorscheme and others.
+-- vim.cmd [[colorscheme gruvbox]]
+-- vim.cmd [[ colorscheme gruber-darker ]]
+vim.cmd [[ colorscheme hybrid ]]
 
-vim.cmd [[colorscheme gruvbox]]
+vim.cmd [[hi Normal ctermbg=NONE]]
+vim.cmd [[hi Normal guibg=NONE]]
+

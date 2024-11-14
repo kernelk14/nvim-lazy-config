@@ -4,6 +4,11 @@ return {
 -- Here are themes installed.
     { "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = {}},
     { "blazkowolf/gruber-darker.nvim" },
+    { "HoNamDuong/hybrid.nvim",
+    	lazy = false,
+	    priority = 1000,
+	    opts = {},
+    },
     
 ----------------------------------------------------------------------------------------    
     
@@ -48,7 +53,27 @@ return {
         },
         config = true
     },
-    { "lewis6991/gitsigns.nvim" }
+    { "lewis6991/gitsigns.nvim" },
+    -- * C3 Mode
+    {
+        "wstucco/c3.nvim",
+        config = function()
+            require("c3")
+        end,
+    },
+    -- * LSP
+    {
+        "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig.nvim",
+        "neovim/nvim-lspconfig",
+        lazy = false
+    },
+    -- * AutoComplete
+    {
+        { "ms-jpq/coq_nvim", branch = "coq" },
+        { "ms-jpq/coq.artifacts", branch = "artifacts" },
+        { 'ms-jpq/coq.thirdparty', branch = "3p" }
+    },
 }
 
 
